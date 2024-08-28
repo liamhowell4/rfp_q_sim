@@ -1,0 +1,28 @@
+﻿question,answer,rfp,project,tech,general,state,iso/region,month,year
+Expected Average Annual Generation (MWh):,554545,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Estimated Capacity Factor (%):,0.316521119,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"If MTR eligible, is the resource considered a Baseload/Firm Renewable Generation?",Yes,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Annual Renewable Degradation (%):,0.0027,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+PTC rate assumed in benchmark Renewable Generation PPA Price ($/kWh):,3%,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Maximum Charging Capacity (MW): ,100,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Maximum Discharging Capacity (MW): ,100,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Minimum Average State of Charge (enter ##%):,0.025,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Maximum Average State of Charge (enter ##%):,0.98,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Allowed Number of Cycles:,365,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Ramp Rate:,Storage can ramp up to full capacity in 5 min,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+Leakage Loss (% State of Charge Loss/hour): ,0,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 1",0.869,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 2",0.868,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 3",0.867,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 4",0.864,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 5",0.862,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 6",0.858,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 7",0.853,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 8",0.85,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 9",0.847,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 10",0.843,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 11",0.84,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 12",0.837,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 13",0.833,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 14",0.831,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024
+"Round Trip Efficiency, Year 15",0.828,cpa_rfo_2024,Las Camas,Solar,FALSE,CA,CAISO,7,2024

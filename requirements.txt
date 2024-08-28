@@ -1,0 +1,5 @@
+pandas
+streamlit
+pinecone-client
+tiktoken
+openai
