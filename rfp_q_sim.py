@@ -27,6 +27,10 @@ index = pc.Index('rfp-response-qs')
 filter_cats = ['rfp', 'general', 'project', 'iso/region', 'state', 'tech']
 filter_cat_dict = {'Project Name': 'project', 'ISO/Region': 'iso/region', 'State': 'state', 'Technology': 'tech', 'Include General (not project/RFP specific) questions': 'general', 'Specific RFP': 'rfp'}
 
+q_a_template_line1 = [['What is the project name?', 'Las Camas Solar Park', 'cpa_rfo_2024', 'Las Camas', 'Solar', True, 'CA', 'CAISO', '7', '2024']]
+new_q_a_template = pd.DataFrame(q_a_template_line1, columns=['question', 'answer', 'rfp', 'project', 'tech', 'general', 'state', 'iso/region', 'month', 'year'])
+
+
 def get_embedding(text, engine=embedding_model):
    text = text.replace("\n", " ")
    return client.embeddings.create(input = [text], model=engine).data[0].embedding
