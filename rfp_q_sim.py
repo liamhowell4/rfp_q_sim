@@ -97,6 +97,7 @@ def upload_new_qs(new_q_a_csv, progress_element=None, progress_function=None):
     q_a_bank_pc = prepare_df_for_pinecone(new_q_a_csv)
 
     for sub_list in tqdm(list(cut_up_list(q_a_bank_pc, 30))):
+        print('Uploading...')
         index.upsert(vectors=sub_list, namespace='rfp-response', async_req=True)
 
     if progress_element:
