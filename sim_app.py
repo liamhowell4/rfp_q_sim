@@ -30,6 +30,9 @@ def update_progress(message='working!', progress_element=None):
         progress_element.status(f"Progress: {message}", state=state)
 
 def run_similarities_on_q_df(q_df, filter_dict={}, progress_element=None, progress_function=None):
+
+    q_df = q_df.fillna("")
+
     st.session_state.finished_qs = rfp.run_similarities_on_q_df(q_df, filter_dict=filter_dict, progress_element=progress_element, progress_function=progress_function)
 
 if 'filter_dict' not in st.session_state:
@@ -107,6 +110,9 @@ with upload_new_q_as:
             </ul>
              '''
     st.markdown(multi, unsafe_allow_html=True)
+
+
+    st.download_button('Download Template', data=rfp.new_q_a_template.to_csv(index=False).encode('utf-8'), file_name='new_q_a_TEMPLATE.csv')
 
     uploaded_file = st.file_uploader("Choose a file", type=['csv'])
 

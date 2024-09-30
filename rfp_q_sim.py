@@ -27,6 +27,10 @@ index = pc.Index('rfp-response-qs')
 filter_cats = ['rfp', 'general', 'project', 'iso/region', 'state', 'tech']
 filter_cat_dict = {'Project Name': 'project', 'ISO/Region': 'iso/region', 'State': 'state', 'Technology': 'tech', 'Include General (not project/RFP specific) questions': 'general', 'Specific RFP': 'rfp'}
 
+q_a_template_line1 = [['What is the project name?', 'Las Camas Solar Park', 'cpa_rfo_2024', 'Las Camas', 'Solar', True, 'CA', 'CAISO', '7', '2024']]
+new_q_a_template = pd.DataFrame(q_a_template_line1, columns=['question', 'answer', 'rfp', 'project', 'tech', 'general', 'state', 'iso/region', 'month', 'year'])
+
+
 def get_embedding(text, engine=embedding_model):
    text = text.replace("\n", " ")
    return client.embeddings.create(input = [text], model=engine).data[0].embedding
@@ -93,6 +97,7 @@ def upload_new_qs(new_q_a_csv, progress_element=None, progress_function=None):
     q_a_bank_pc = prepare_df_for_pinecone(new_q_a_csv)
 
     for sub_list in tqdm(list(cut_up_list(q_a_bank_pc, 30))):
+        print('Uploading...')
         index.upsert(vectors=sub_list, namespace='rfp-response', async_req=True)
 
     if progress_element:
